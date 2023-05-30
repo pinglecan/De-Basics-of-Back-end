@@ -7,6 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php 
+    $getallen = array(3,5,6,8,12);
+    function tafel_van($getal) {
+    for($x = 1; $x != 11; $x ++ )
+    echo $x .' x '.$getal.' = '. $x * $getal .'<br>';
+    }
+
+
+    foreach($getallen as $getal){
+        tafel_van($getal);
+    }
+    ?>
 </body>
-</html>m
+</html>

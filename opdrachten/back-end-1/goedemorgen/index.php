@@ -11,21 +11,24 @@
     $hour = date('H');
     if($hour < 6){
         $background = "img/night.png";
+        $goede = 'goede nacht';
     }elseif($hour < 12){
         $background = "img/morning.png";
+        $goede = 'goede morgen';
     }elseif($hour < 18){
         $background = "img/afternoon.png";
+        $goede = 'goede middag';
     }else{
         $background = "img/evening.png";
+        $goede = 'goede avond';
     };
-
-
     ?>
 
 </head>
 <body style = "background-image: url(<?php echo $background?>);">
     <div class="text">    
     <?php    
+        echo $goede . '<br>' . '<br>';
         echo  "Het is nu " . date("H:i");
     ?>
     </div>
