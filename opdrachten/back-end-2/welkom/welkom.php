@@ -1,3 +1,12 @@
+<?php 
+    function validateData($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +17,8 @@
 </head>
 <body>
     <h1>De ingevulde gegevens zijn: </h1>
-<?php 
-echo "Your name: ", $_POST["name"], "<br><br>";
-echo "Your email: ", $_POST["email"];
-?>
-
-    
+    <p>Your name: <?php echo validateData($_POST['name']) ?></p>
+    <p>Your email: <?php echo validateData($_POST['email']) ?></p>
 </body>
 </html>
 
