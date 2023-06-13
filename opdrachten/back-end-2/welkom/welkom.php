@@ -25,7 +25,7 @@
     <h1>De ingevulde gegevens zijn: </h1>
     <?phpif (empty($_POST["name"])) {
         $nameErr = "Name is required";
-  } else {
+}   else {
         <p>Your name: <?php echo validateData($_POST['name']) ?></p>}
     <p>Your email: <?php echo validateData($_POST['email']) ?></p>
 </body>
