@@ -23,10 +23,11 @@
 </head>
 <body>
     <h1>De ingevulde gegevens zijn: </h1>
-    <?phpif (empty($_POST["name"])) {
+    <?php if (empty($_POST["name"])) {
         $nameErr = "Name is required";
-}   else {
-        <p>Your name: <?php echo validateData($_POST['name']) ?></p>}
+    }   else { 
+            echo '<p>Your name:</p>', validateData($_POST['name']);}
+        ?>
     <p>Your email: <?php echo validateData($_POST['email']) ?></p>
 </body>
 </html>
