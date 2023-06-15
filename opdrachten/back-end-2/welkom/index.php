@@ -13,11 +13,11 @@
             <h1>vul je gegevens in</h1> 
             <br>
             <p>name</p>
-            <input type="text" name="name">
+            <input type="text" name="name" required>
             <span class="error">* <?php echo $nameErr;?></span>
             <br>
             <p>E-mail</p>
-            <input type="email" name="email">
+            <input type="email" name="email" required>
             <span class="error">* <?php echo $emailErr;?></span>
             <br><br><br>
             <input type="submit" id="submit">
