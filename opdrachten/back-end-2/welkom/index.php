@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <?php     $nameErr = $emailErr = " ";?>
+    <?php     $nameErr = $emailErr = " "; ?>
 </head>
 <body>
     <body>
@@ -20,7 +20,7 @@
             <input type="email" name="email">
             <span class="error">* <?php echo $emailErr;?></span>
             <br><br><br>
-            <input type="submit">
+            <input type="submit" id="submit">
         </form>
     </body>
 </body>
