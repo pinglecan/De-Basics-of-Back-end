@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(67, 63, 63);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header{
+    background-color: red;
+}
+
+.main{
+    background-color: white;
+}
+
+.footer{
+    background-color: gray;
+}
+button{
+    background:none;
+    color: white;
+    cursor:pointer;
+    
+}
